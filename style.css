@@ -1,0 +1,974 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+
+:root{
+  --bluelight: #1974fe;
+  --darkblue: #1e3448;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "gilroy-bold";
+  color: #141414;
+  outline: none;
+}
+
+header{
+  display: flex;
+  margin: 1rem 9rem;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+p{
+  font-family: 'Gilroy-Medium', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  background: var(--bluelight);
+  border-radius: 3rem;
+  color: #fff;
+  width: 9rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: .5;
+}
+
+.hero-section{
+  background: radial-gradient(#eee, #f8f7e5, #fff);
+  padding: 1rem 0;
+}
+
+/* header section */
+header .logo{
+  display: flex;
+}
+
+header .logo h3{
+  border-left: 2px var(--bluelight) solid;
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
+  color: var(--bluelight);
+  height: 1.5rem;
+}
+
+header .logo img{
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+header .navlist{
+  display: flex;
+  gap: 2.5rem;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.navlist > li:first-child{
+  color: var(--bluelight);
+  width: 4rem;
+}
+
+.navlist > li:nth-child(2){
+  width: 6rem;
+}
+
+.navlist > li:nth-child(2) i{
+  margin-left: 0.3rem;
+}
+
+.navbuttons{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbuttons .loginbtn{
+  border: none;
+  text-align: center;
+  color: var(--bluelight);
+  padding: 1.3rem 0;
+  width: 4rem;
+  font-size: 1rem;
+}
+
+.navbuttons .trybtn{
+  color: #fff;
+  width: 9rem;
+  font-size: 0.9rem;
+  padding: 0.4rem 0;
+}
+
+/* top hero section */
+.top-herosection h4{
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 5rem;
+  position: relative;
+  margin-bottom: 1.9rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.top-herosection .underline{
+  position: absolute;
+  top: 47.5%;
+  right: 44%;
+  width: 9rem;
+  height: 1rem;
+}
+
+.top-herosection span{
+  color: var(--bluelight);
+}
+
+.top-herosection p{
+  font-size: .9rem;
+  font-weight: bold;
+  max-width: 40rem;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-btn a{
+  color: var(--bluelight);
+}
+
+/* bottom hero section */
+.bottom-herosection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 9rem;
+  margin-bottom: 2rem;
+}
+
+.iconbox{
+  border: #1974fe 1px solid;
+  height: 9rem;
+  width: 30rem;
+  border-radius: 24px;
+  position: relative;
+  z-index: 111;
+  background-color: #e2e9f0;
+  margin-left: 10rem;
+}
+
+.icons{
+  display: flex;
+  gap: 0;
+  margin-left: 1.3rem;
+}
+
+.icons > img:first-child{
+  position: absolute;
+  left: 7.8%;
+  top: 15%;
+}
+.icons > img:nth-child(2){
+  position: absolute;
+  left: 16.5%;
+  top: 15%;
+}
+.icons > img:nth-child(3){
+  position: absolute;
+  left: 25%;
+  top: 15%;
+}
+
+.icons > img:nth-child(4){
+  height: 9px;
+  width: 19px;
+  position: absolute;
+  left: 38%;
+  top: 28%;
+}
+.icons > img:nth-child(5){
+  position: absolute;
+  left: 46%;
+  top: 15%;
+}
+
+.triangle-vector{
+  height: 11rem;
+  position: absolute;
+  left: 37.5%;
+  z-index: 1;
+}
+
+.iconbox p{
+  padding-top: 5.5rem;
+  font-size: 0.6rem;
+  text-align: center;
+  max-width: 14rem;
+  margin: 0 auto;
+}
+
+.lowerbtmherosection{
+  position: relative;
+}
+
+.lowerbtmherosection > img:first-child{
+  width: 75rem;
+  height: 6rem;
+}
+
+.lowerbtmherosection > img:nth-child(2){
+  width: 45rem;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.lastherobtmbox{
+  background-color: #f9fbfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: -4px;
+  padding: 1rem 0 2rem 0;
+  margin-bottom: 6rem;
+}
+
+.lastherobtmbox h4{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.lastherobtmbox p{
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.lastherobtmbox span{
+  color: var(--bluelight);
+}
+
+.lastherobtmbox .inforows{
+  display: flex;
+  gap: 5rem;
+}
+
+/* third section */
+.third-section{
+  display: flex;
+  margin: 1rem 11rem;
+  gap: 6rem;
+  margin-bottom: 4rem;
+}
+
+.third-section h4{
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  max-width: 28rem;
+  white-space: nowrap;
+  margin-left: 2rem;
+}
+
+.third-section h4 + p{
+  font-size: 0.8rem;
+  max-width: 20rem;
+  line-height: 1.25rem;
+  margin-left: 1.5rem;
+}
+
+.third-section span{
+  color: var(--bluelight);
+}
+.third-section .leftbox{
+  position: relative;
+}
+
+.third-section .leftbox img{
+  position: absolute;
+}
+
+.third-section .rightbox{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.third-section .rightbox .box1{
+  margin-bottom: 1.5rem;
+}
+
+.third-section .rightbox .imgbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #e4efff;
+  margin-bottom: 2rem;
+}
+
+.third-section .rightbox h5{
+  font-size: 1.1rem;
+}
+
+.third-section .rightbox p{
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+/* Card Section */
+.card-section{
+  margin: 1rem 9rem;
+  margin-bottom: 2rem;
+}
+
+.cardsection-header{
+  margin: 0 13rem;
+  text-align: center;
+  margin-bottom: 4.25rem;
+  position: relative;
+}
+
+.cardsection-header img{
+  position: absolute;
+  left: 5%;
+}
+
+.cardsection-header h4{
+  font-size: 2rem;
+  max-width: 36rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.cardsection-header span{
+  color: var(--bluelight);
+}
+
+.cardsection-header p{
+  max-width: 31rem;
+  margin-left: 1.8rem;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.cards h4{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cards .card2 h4{
+  color: #e3e6e8;
+}
+
+.cards .card1 h5,
+.cards .card3 h5{
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.cards li img{
+  margin-right: 0.6rem;
+}
+
+.card1,
+.card3{
+  width: 23rem;
+  height: 28rem;
+  border: 1px solid var(--bluelight);
+  padding: 0 5rem;
+  padding-top: 2rem;
+  border-radius: 1rem;
+}
+
+.cards .card2{
+  width: 25rem;
+  height: 39rem;
+  background-color: var(--darkblue);
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0 4rem;
+  padding-top: 7rem;
+  z-index: 111;
+  border-radius: 1rem;
+  color: #e3e6e8;
+}
+
+.card2 h5{
+  margin-bottom: 2rem;
+  color: #e3e6e8;
+  font-size: 0.9rem;
+}
+
+.card2 li{
+  color: #e3e6e8;
+}
+
+.card-section li{
+  margin-bottom: 1.4rem;
+  white-space: nowrap;
+}
+
+.card-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.card-buttons .btn{
+  width: 10rem;
+}
+
+.card-buttons > .btn:first-child{
+  border: 2px solid var(--bluelight);
+  background-color: #fff;
+  color: var(--bluelight);
+  white-space: nowrap;
+}
+
+/* form section */
+.form-section{
+  background-color: var(--darkblue);
+  padding: 1rem 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form-section form{
+  height: 22rem;
+  width: 29rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.form-section .img1{
+  position: absolute;
+  left: -4%;
+  height: 30rem;
+}
+
+.form-section .img2{
+  position: absolute;
+  left: -7%;
+}
+
+.form-section .img3{
+  position: absolute;
+  left: -8%;
+}
+.form-section .img4{
+  position: absolute;
+  right: 0%;
+  bottom: -18%;
+}
+.form-section .img5{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+.form-section form div{
+  display: flex;
+  width: 80%;
+}
+
+.form-section form > input:first-child{
+  width: 80%;
+  height: 3.5rem;
+  border: 1px solid var(--bluelight);
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.form-section form > input:first-child::placeholder{
+  color: var(--bluelight);
+}
+
+.form-section form select + input{
+  width: 46%;
+  height: 3.2rem;
+  border: 1px solid var(--bluelight);
+  border-radius: 0.7rem;
+  color: var(--bluelight);
+  padding-left: 1rem;
+}
+
+.form-section form select + input::placeholder{
+  color: var(--bluelight);
+}
+
+.form-section form select{
+  width: 51%;
+  height: 3.2rem;
+  border: 1px solid var(--bluelight);
+  margin-right: 1rem;
+  border-radius: 0.7rem;
+  padding-left: 1rem;
+  color: var(--bluelight);
+  background-color: #fff;
+}
+
+.form-section button{
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-section button span{
+  margin-left: 1rem;
+}
+
+.form-section p{
+  max-width: 80%;
+  color: var(--bluelight);
+  font-size: 0.8rem;
+}
+
+/* FAQ Section */
+.faq-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 15rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.faq-section .faqimg1{
+  position: absolute;
+  left: -32%;
+  top: -1%;
+}
+
+.faq-section .faqimg2{
+  position: absolute;
+  left: -36%;
+  top: 4%;
+}
+
+.faq-section .faqimg3{
+  position: absolute;
+  left: -34%;
+  top: 9%;
+}
+
+.faq-section .faqimg4{
+  position: absolute;
+  right: -31%;
+  bottom: -4%;
+}
+
+.faq-section .faqimg5{
+  position: absolute;
+  right: -31%;
+  bottom: -4%;
+}
+
+.faq-section .faqimg6{
+  position: absolute;
+  right: -31%;
+  bottom: -4%;
+}
+
+.faq-section h4{
+  margin: 0 auto;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  
+}
+
+.faq-section .line{
+  position: absolute;
+  top: 0%;
+  left: 43%;
+}
+
+.faq-section .accordionlist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.faq-section .accordionlist li{
+  border-bottom: 1px solid #000;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.faq-section .accordionlist li > span:first-child{
+  margin-right: 8rem;
+  font-size: 0.9rem;
+  font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.faq-section .accordionlist li > span:nth-of-type(2){
+  font-size: 1.4rem;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  cursor: pointer;
+}
+.faq-section .accordionlist li > span:nth-of-type(2):hover p{
+  visibility: visible;
+}
+
+.faq-section .accordionlist li p{
+  
+  font-size: 0.8rem;
+  visibility: hidden;
+}
+
+.faq-section .accordionlist li:first-child p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  visibility: visible;
+}
+
+/* bottom section */
+.bottom-section{
+  background-color: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  position: relative;
+}
+
+.bottom-section .btmimg1{
+  position: absolute;
+  left: -2%;
+  top: 0%;
+}
+
+.bottom-section .btmimg2{
+  position: absolute;
+  left: -4%;
+  top: 0%;
+}
+
+.bottom-section .btmimg3{
+  position: absolute;
+  left: -6%;
+  top: 0%;
+}
+
+.bottom-section .btmimg4{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+.bottom-section .btmimg5{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+.bottom-section .btmimg6{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+.bottom-section h4{
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.bottom-section button{
+  width: 11rem;
+}
+
+/* footer section */
+footer{
+  position: relative;
+}
+
+.footerimg1{
+  position: absolute;
+  left: 0%;
+  bottom: -10%;
+}
+
+.footerimg2{
+  position: absolute;
+  left: 0%;
+  bottom: -10%;
+}
+
+.footerimg3{
+  position: absolute;
+  left: 0%;
+  bottom: -10%;
+}
+
+.footerimg4{
+  position: absolute;
+  right: 0%;
+  bottom: -10%;
+}
+
+.footerimg5{
+  position: absolute;
+  right: 0%;
+  bottom: -10%;
+}
+
+.footerimg6{
+  position: absolute;
+  right: 0%;
+  bottom: -10%;
+}
+
+.inner-footer{
+  display: flex;
+  padding: 7rem 12.5rem;
+  flex-direction: row;
+  gap: 5rem;
+  height: 35rem;
+  margin-bottom: 2rem;
+}
+
+.footerleft .logo{
+  display: flex;
+}
+
+.footerleft .logo h3{
+  border-left: 2px solid black;
+  padding-left: 1rem;
+}
+
+.footerleft .logo img{
+  margin-right: 1rem;
+}
+
+.footerleft .socials{
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.footerleft .socials i{
+  font-size: 1.4rem;
+}
+
+.footerright{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footerright h5{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footerright li{
+  font-size: .9rem;
+  margin-bottom: .5rem;
+  white-space: nowrap;
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+footer p{
+  text-align: end;
+  margin-right: 8rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 648px){
+  header{
+    margin: 0.5rem 1rem;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .navbuttons .trybtn{
+    color: #fff;
+    width: 8rem;
+    height: 3rem;
+    font-size: 0.9rem;
+  }
+
+  header .navlist{
+    display: none;
+  }
+
+  .navbuttons{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .top-herosection h4{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin: 0 1rem;
+  }
+
+  .top-herosection p{
+    margin: 1rem 3rem;
+  }
+
+  .top-herosection .underline{
+    position: absolute;
+    top: 43%;
+    right: 15%;
+    width: 9rem;
+    height: 1rem;
+  }
+
+  .iconbox{
+    width: 20rem;
+    margin-left: 2rem;
+  }
+
+  .lowerbtmherosection > img:first-child{
+    width: 30rem;
+  }
+
+  .lowerbtmherosection > img:nth-child(2){
+    width: 20rem;
+  }
+  .lastherobtmbox{
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .lastherobtmbox .inforows{
+    gap: 0.7rem;
+  }
+
+  .third-section{
+    flex-direction: column;
+    margin: 1rem 4rem;
+  }
+
+  .third-section .rightbox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .third-section .rightbox .imgbox{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .card-section{
+    margin: 1rem 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .cardsection-header{
+    margin: 0 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .cards{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-section{
+    padding: 1rem 2rem;
+  }
+
+  .form-section .img1,  .form-section .img3, .form-section .img4, .form-section .img5{
+    visibility: hidden;
+  }
+  .accordionlist{
+    width: 20rem;
+  }
+
+  .accordionlist li{
+    width: 22rem;
+  }
+
+  .faq-section{
+    width: 18rem;
+    margin: 1rem 2rem;
+    padding-left: 1rem;
+    padding: 1rem 3rem;
+  }
+
+  .faq-section .accordionlist li > span:nth-of-type(2){
+    right: 3%;
+    top: 0%;
+  }
+
+  .bottom-section h4{
+    text-align: center;
+  }
+
+  .bottom-section .btmimg1, .bottom-section .btmimg2, .bottom-section .btmimg3, .bottom-section .btmimg4, .bottom-section .btmimg5{
+    visibility: hidden;
+  }
+
+  .footerright{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-footer{
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .footerimg1, .footerimg6, .footerimg5, .footerimg4{
+    visibility: hidden;
+  }
+
+  footer p{
+    visibility: hidden;
+    text-align: center;
+    margin-right: 2rem;
+  }
+  
+}
